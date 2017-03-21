@@ -104,6 +104,13 @@ body{margin: 0;}
     margin: 15px 2px;
 }
 
+/*-------------------proyectos---------------------------*/
+.proyectos .areaTrabajo{
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 15px 0;
+}
+
 
 /*--------------------------media querys-----------------------------------------*/
 @media screen and (max-width:800px){
