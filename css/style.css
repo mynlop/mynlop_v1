@@ -1,0 +1,115 @@
+body{margin: 0;}
+/*letra de logo*/
+/*@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');*/
+
+/*----------------------------header-------------------------------------------------*/
+.head a{
+    font-family: 'Uncial Antiqua', cursive; 
+    font-size: 2em; 
+    color: white;
+    text-decoration: none;
+}
+.head{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background: #323f51;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------area de trabajo--------------------------------------------*/
+.pagina{
+    display: flex;
+    height: 92vh;
+}
+.areaTrabajo {
+    background: url('../imagenes/lineas.png') black;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.carta{
+    width: 25%;
+    height: 200px;
+    background: #6b809d;
+    margin: 10px;
+}
+
+/*---------------------area de informacion------------------------------------------------*/
+.areaInfo{
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    background: #323f51;
+}
+.personal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.foto, .info, .redes{
+    width: 70%;
+}
+.foto img{
+    border-radius: 50%;
+}
+.info p{
+    color: white;
+    text-align: center;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+.redes li{
+    background: black;
+    padding: 10px;
+    transform: rotate(-45deg);
+    width: 15px;
+    height: 15px;
+}
+.redes li a{
+    color: white;
+}
+.redes li a i{    transform: rotate(45deg);}
+
+
+
+/*--------------------------media querys-----------------------------------------*/
+@media screen and (max-width:800px){
+    .areaTrabajo{
+        width: 50%;
+        overflow-y: scroll;
+    }
+    .areaInfo{
+        width: 50%;
+        overflow-y: scroll;
+    }
+    .carta{
+        width: 80%;
+    }
+    .head a{
+        font-family: 'Uncial Antiqua', cursive; 
+        font-size: 1.5em; 
+    }
+}
+@media screen and (max-width:500px){
+    .areaTrabajo{
+        width: 100%;
+    }
+    .areaInfo{
+    width: 100%;
+    left: -100%; 
+    display: flex;
+    position: absolute;
+    height: 92vh;
+    }
+}
