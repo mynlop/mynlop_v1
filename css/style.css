@@ -111,6 +111,32 @@ body{margin: 0;}
     padding: 15px 0;
 }
 
+/*------------------------sobre mi-------------------------------*/
+.acerca{
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 95%;
+}
+.pg-Acerca .acerca{
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 15px 25px;
+}
+.conocimientos{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.conocimientos li{
+    border: 1px solid #323f51;
+    padding: 6px 12px;
+    background: #6b809d;
+    color: white;
+    margin: 2px;
+    border-radius: 15px;
+}
 
 /*--------------------------media querys-----------------------------------------*/
 @media screen and (max-width:800px){
