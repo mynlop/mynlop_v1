@@ -14,8 +14,12 @@ body{margin: 0;}
     width: 100%;
     height: 8vh;
     background: #323f51;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    color: white;
+}
+.informacion{
+    display: none;
 }
 
 /*---------------------------area de trabajo--------------------------------------------*/
@@ -38,6 +42,16 @@ body{margin: 0;}
     height: 200px;
     background: #6b809d;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carta a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
 
 /*---------------------area de informacion------------------------------------------------*/
@@ -216,10 +230,15 @@ body{margin: 0;}
         width: 100%;
     }
     .areaInfo{
+    transition: all ease 0.5s;
     width: 100%;
     left: -100%; 
     display: flex;
     position: absolute;
     height: 92vh;
+    }
+    .informacion{
+        display: block;
+        cursor: pointer;
     }
 }
