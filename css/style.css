@@ -46,6 +46,9 @@ body{margin: 0;}
     justify-content: center;
     align-items: center;
 }
+.carta:hover{
+    background: #5e5851;
+}
 .carta a{
     display: flex;
     flex-direction: column;
@@ -69,6 +72,7 @@ body{margin: 0;}
 }
 .foto, .info, .redes{
     width: 70%;
+    transition: all ease 0.5s;
 }
 .foto img{
     border-radius: 50%;
@@ -199,6 +203,34 @@ body{margin: 0;}
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(250,250,250,0.1); 
 }
+/*----------------------barra lateral de proyectos-----------------------------------*/
+.infoProyecto{
+    display: none;
+    position: relative;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+.infoProyecto h2{
+    text-align: center;
+}
+.infoProyecto ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+.infoProyecto ul li{
+    background: #5e5851;
+    padding: 5px;
+}
+.cerrarInfo{
+    position: absolute;
+    right: 47%;
+    top: -22px;
+    color: white;
+    cursor: pointer;
+}
 
 /*--------------------------media querys-----------------------------------------*/
 @media screen and (max-width:800px){
@@ -233,7 +265,7 @@ body{margin: 0;}
     transition: all ease 0.5s;
     width: 100%;
     left: -100%; 
-    display: flex;
+    /*display: flex;*/
     position: absolute;
     height: 92vh;
     }
