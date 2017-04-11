@@ -8,7 +8,7 @@ $(document).ready(function(){
              $(".areaInfo").css("left", "-100%");
         }  
     });
-    $(".carta").click(function(){
+    $(".proyectos .carta").click(function(){
     	$(".personal").css("justify-content","space-around");
     	$(".foto").css("width","25%");
     	$(".info").css("display","none");
@@ -21,7 +21,7 @@ $(document).ready(function(){
     });
     var mediaQuery = window.matchMedia("(max-width: 500px)");
     if(mediaQuery.matches){
-	    $(".carta").click(function(){
+	    $(".proyectos .carta").click(function(){
     		$(".personal").css("justify-content","space-around");
     		$(".foto").css("width","25%");
     		$(".info").css("display","none");
