@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    $.getJSON("https://hungry-art-2749.nanoscaleapi.io/about", function(data){
+        var output_presentacion = '<p>'+data.datos.info+'</p>';
+		$('.areaInfo .info').html(output_presentacion);
+    });
     // obtener informacion de proyectos
 	$.getJSON("https://hungry-art-2749.nanoscaleapi.io/proyects", function(data){
         console.log(data.proyectos);
