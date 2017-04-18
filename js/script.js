@@ -1,5 +1,9 @@
 (function(){
-	console.log($(".cerrarInfo").length > 0);
+    $.getJSON("https://hungry-art-2749.nanoscaleapi.io/about", function(data){
+        var output_presentacion = '<p>'+data.datos.info+'</p>';
+		$('.areaInfo .info').html(output_presentacion);
+    });
+	
     let ver = false;
     $(".informacion").click(function(){
         ver = (ver) ? false : true;

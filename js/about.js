@@ -22,7 +22,7 @@ $(document).ready(function(){
         });
         output += '</div>';
         $('.acerca').html(output);
-		var output_presentacion = '<p>'+data.datos.info+'</p>';
-		$('.areaInfo .info').html(output_presentacion);
+		// var output_presentacion = '<p>'+data.datos.info+'</p>';
+		// $('.areaInfo .info').html(output_presentacion);
 	});
 });
