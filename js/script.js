@@ -1,4 +1,5 @@
-$(document).ready(function(){
+(function(){
+	console.log($(".cerrarInfo").length > 0);
     let ver = false;
     $(".informacion").click(function(){
         ver = (ver) ? false : true;
@@ -8,18 +9,23 @@ $(document).ready(function(){
              $(".areaInfo").css("left", "-100%");
         }  
     });
-    $(".proyectos .carta").click(function(){
-    	$(".personal").css("justify-content","space-around");
-    	$(".foto").css("width","25%");
-    	$(".info").css("display","none");
-    	$(".infoProyecto").css("display","block");
-    });
-    $(".cerrarInfo").click(function(){
+
+
+})();
+function verInfoProyecto(){
+	$(".proyectos .carta").click(function(){
+		$(".personal").css("justify-content","space-around");
+		$(".foto").css("width","25%");
+		$(".info").css("display","none");
+		$(".infoProyecto").css("display","block");
+	});
+	$(".cerrarInfo").click(function(){
+		console.log('saludos');
     	$(".foto").css("width","70%");
     	$(".info").css("display","block");
     	$(".infoProyecto").css("display","none");
     });
-    var mediaQuery = window.matchMedia("(max-width: 500px)");
+	var mediaQuery = window.matchMedia("(max-width: 500px)");
     if(mediaQuery.matches){
 	    $(".proyectos .carta").click(function(){
     		$(".personal").css("justify-content","space-around");
@@ -35,31 +41,4 @@ $(document).ready(function(){
 	    	$(".areaInfo").css("left", "-100%");
 	    });
     }
-	// obtener informacion de about
-	$.getJSON("https://hungry-art-2749.nanoscaleapi.io/about", function(data){
-        // console.log(data.datos);
-        var output = '';
-        output += '<h1>'+data.datos.nombre+'</h1>';
-        output += '<h2>'+data.datos.profresion+'</h2>';
-        output += '<p>'+data.datos.parrafo1+'</p>';
-        output += '<p>'+data.datos.parrafo2+'</p>';
-        output += '<p>'+data.datos.frase+'</p>';
-        output += '<div class = "conocimientos">';
-        $.each( data.datos.tecnologias, function(i, val ){
-			output += '<div class="caja">';
-			output += '<div class="skill-pic">';
-            output += '<img src="'+data.datos.tecnologias[i].imagen+'">';
-			output += '</div>'
-			output += '<div class="description">';
-			output += '<h3>'+data.datos.tecnologias[i].nombre+'</h3>';
-			output += '<p>'+data.datos.tecnologias[i].porcentaje+'</p>'
-			output += '</div>';
-			output += '</div>';
-        });
-        output += '</div>';
-        $('.acerca').html(output);
-		var output2 = '<p>'+data.datos.info+'</p>';
-		$('.areaInfo .info').html(output2);
-	});
-
-});
+}
