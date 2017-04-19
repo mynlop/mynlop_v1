@@ -5,12 +5,12 @@ $(document).ready(function(){
 		// cargar las tarjetas
 		var output = '';
 		$.each( data.proyectos, function(i, val ){
-            output += '<div class="carta">'+data.proyectos[i].imagen+'</div>';
+            output += '<div class="carta"><img src="'+data.proyectos[i].imagen+'"></div>';
         });
 		$('.areaTrabajo').html(output);
        
         // cargar informacion de las tarjetas
-        $(".proyectos .carta").each(function(e){
+        $(".proyectos .carta img").each(function(e){
             $(this).on("click",function(){
                 var output2 = '<br>';
                 output2 += '<i class="fa fa-times fa-3x cerrarInfo" aria-hidden="true"></i>';
