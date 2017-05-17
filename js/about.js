@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// obtener informacion de about
-	$.getJSON("https://hungry-art-2749.nanoscaleapi.io/about", function(data){
+	$.getJSON("https://quarkbackend.com/getfile/mynlop15/about", function(data){
         // console.log(data.datos);
         var output = '';
         output += '<h1>'+data.datos.nombre+'</h1>';
