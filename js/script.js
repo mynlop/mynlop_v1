@@ -1,5 +1,5 @@
 (function(){
-    $.getJSON("https://hungry-art-2749.nanoscaleapi.io/about", function(data){
+    $.getJSON("https://quarkbackend.com/getfile/mynlop15/about", function(data){
         var output_presentacion = '<p>'+data.datos.info+'</p>';
 		$('.areaInfo .info').html(output_presentacion);
     });
