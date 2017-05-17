@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // obtener informacion de proyectos
-	$.getJSON("https://hungry-art-2749.nanoscaleapi.io/proyects", function(data){
+	$.getJSON("https://quarkbackend.com/getfile/mynlop15/about", function(data){
         // console.log(data.proyectos);
 		// cargar las tarjetas
 		var output = '';
