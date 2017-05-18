@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // obtener informacion de proyectos
-	$.getJSON("https://quarkbackend.com/getfile/mynlop15/about", function(data){
+	$.getJSON("https://quarkbackend.com/getfile/mynlop15/proyects", function(data){
         // console.log(data.proyectos);
 		// cargar las tarjetas
 		var output = '';
