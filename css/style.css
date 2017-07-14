@@ -1,4 +1,4 @@
-body{margin: 0;}
+body{margin: 0;font-family:monospace;}
 /*letra de logo*/
 /*@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');*/
 
@@ -136,6 +136,7 @@ body{margin: 0;}
     width: 80%;
     /*text-align: center;*/
     height: 95%;
+    font-size: 16px;
 }
 .pg-Acerca .acerca{
     overflow: hidden;
@@ -146,6 +147,7 @@ body{margin: 0;}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-size: 12px;
 }
 .caja{
     width: 100px;
